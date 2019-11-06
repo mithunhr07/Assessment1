@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assessment</title>
+		<!-- <script type="text/javascript" src="./javascript/file1.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="./css/file.css">
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<style>
+		#more {display: none;}
+		</style>
+	</head>
+	<body>
+		<nav class="nav">
+			  <a class="zxc" href="#home">Home</a>
+			  <a class="vbn" href="#about">About</a>
+			  <a class="asd" href="#team">Team</a>
+			  <a class="fgh" href="event">Event</a>
+			  <i class='fab fa-facebook-f'></i>
+			  <i class='fab fa-invision'></i>
+			  <i class='fab fa-instagram'></i>
+			  <a class="alignright" href="demo1.html">Sign up</a>
+			  <a class="alignright1" href="demo1.html">Log in</a>
+			</nav><br><br><br><br><br><br>
+		<div id="home">	
+		  <div class="container">
+		  <img src="./images/img.jpeg" height="350" width="700" class="align">
+		  <button class="btn">Get Started</button>
+		  </div>
+		</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div id="about" class="move">
+			<div>
+			<div class="mySlides"><img src="images/img1.jpg" width="90%" height="500px"></div>
+			<div class="mySlides"><img src="images/img2.jpg" width="90%" height="500px"></div>
+			<div class="mySlides"><img src="images/img3.jpg" width="90%" height="500px"></div>
+			<script>
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none"; 
+			  }
+			  slideIndex++;
+			  if (slideIndex > x.length) {slideIndex = 1} 
+			  x[slideIndex-1].style.display = "block"; 
+			  setTimeout(carousel, 2000); 
+			}
+			</script>
+			<div class="text-block">
+				<p>Creative Skills</p>
+				<p>Create Your Own Web<br>Masterpiece</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.<br>Fusce luctus vestibulum augue ut aliquet.</span></p>
+				<button onclick="myFunction()" id="myBtn">Read more</button>
+				<script>
+				function myFunction() {
+				  var dots = document.getElementById("dots");
+				  var moreText = document.getElementById("more");
+				  var btnText = document.getElementById("myBtn");
+
+				  if (dots.style.display === "none") {
+				    dots.style.display = "inline";
+				    btnText.innerHTML = "Read more"; 
+				    moreText.style.display = "none";
+				  } else {
+				    dots.style.display = "none";
+				    btnText.innerHTML = "Read less"; 
+				    moreText.style.display = "inline";
+				  }
+				}
+				</script>
+
+			</div>
+		</div>
+		</div>	
+	</body>
+</html>
